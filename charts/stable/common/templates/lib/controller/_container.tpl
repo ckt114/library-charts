@@ -41,7 +41,7 @@
   {{- if or .Values.envFrom .Values.secret }}
   envFrom:
     {{- with .Values.envFrom }}
-      {{- toYaml . | nindent 4 }}
+      {{- tpl (toYaml .) $ | nindent 4 }}
     {{- end }}
     {{- if .Values.secret }}
     - secretRef:
