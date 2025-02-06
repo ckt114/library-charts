@@ -86,8 +86,17 @@ automountServiceAccountToken: true
 # -- Use this to populate a secret with the values you specify.
 # Be aware that these values are not encrypted by default, and could therefore visible
 # to anybody with access to the values.yaml file.
-secret: {}
-  # PASSWORD: my-password
+secret:
+  secret:
+    # -- Enables or disables the secret
+    enabled: false
+    # -- Labels to add to the secret
+    labels: {}
+    # -- Annotations to add to the secret
+    annotations: {}
+    # -- secret data content. Helm template enabled.
+    data: {}
+      # foo: bar
 
 # -- Configure configMaps for the chart here.
 # Additional configMaps can be added by adding a dictionary key similar to the 'config' object.
