@@ -7,7 +7,7 @@ using the common library.
     {{- $hpaName := include "common.names.fullname" . -}}
     {{- $targetName := include "common.names.fullname" . }}
 ---
-apiVersion: autoscaling/v2beta1
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: {{ $hpaName }}
