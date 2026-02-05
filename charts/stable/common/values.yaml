@@ -770,3 +770,6 @@ addons:
       capabilities:
         add:
           - NET_ADMIN
+
+# -- List of manifests to create. Support use of {{ .Values }}.
+extraObjects: []

@@ -22,3 +22,5 @@ Gemfile.lock
 
 # Testing
 __snapshot__/
+
+*.tgz

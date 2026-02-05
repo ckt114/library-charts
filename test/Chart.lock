@@ -1,0 +1,6 @@
+dependencies:
+- name: generic
+  repository: file://../charts/generic
+  version: 4.5.6
+digest: sha256:07186309c4e44bc031d62821bf756f8b1075bb8f2025859cecbcc1eebd105654
+generated: "2026-02-05T17:02:11.274088-05:00"
