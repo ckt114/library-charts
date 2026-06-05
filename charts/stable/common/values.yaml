@@ -98,6 +98,28 @@ secret:
     data: {}
       # foo: bar
 
+# -- Configure ExternalSecret resources for the chart here.
+# Additional ExternalSecrets can be added by adding a dictionary key similar to the example below.
+externalSecrets: {}
+  # firstSecret:
+  #   # -- Name of the SecretStore or ClusterSecretStore to use.
+  #   secretStoreRefName: aws-clustersecretstore
+  #   # -- Kind of secret store to use.
+  #   kind: ClusterSecretStore
+  #   # -- List of remote secret refs to extract.
+  #   dataFrom: []
+  #   # -- List of individual remote secret refs to map.
+  #   data: []
+  #   # -- ExternalSecret refresh policy.
+  #   refreshPolicy: Periodic
+  #   # -- ExternalSecret refresh interval.
+  #   refreshInterval: 1h
+  #   target:
+  #     # -- ExternalSecret target creation policy.
+  #     creationPolicy: Owner
+  #     # -- ExternalSecret target deletion policy.
+  #     deletionPolicy: Delete
+
 # -- Configure configMaps for the chart here.
 # Additional configMaps can be added by adding a dictionary key similar to the 'config' object.
 # @default -- See below

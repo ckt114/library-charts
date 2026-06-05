@@ -56,5 +56,7 @@ Main entrypoint for the common library chart. It will render all underlying temp
     {{ include "common.secret" .  | nindent 0 }}
   {{- end -}}
 
+  {{ include "common.externalSecrets" .  | nindent 0 }}
+
   {{ include "common.extraObjects" .  | nindent 0 }}
 {{- end -}}

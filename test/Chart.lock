@@ -1,6 +1,6 @@
 dependencies:
 - name: generic
   repository: file://../charts/generic
-  version: 4.5.6
-digest: sha256:07186309c4e44bc031d62821bf756f8b1075bb8f2025859cecbcc1eebd105654
-generated: "2026-02-05T17:02:11.274088-05:00"
+  version: 4.5.8
+digest: sha256:337da20c9e46f2dd0f85e6f7f7641c86de924ec5c6c23826418105094869cd6b
+generated: "2026-06-05T09:32:48.113348-04:00"

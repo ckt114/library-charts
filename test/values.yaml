@@ -1,12 +1,20 @@
 test:
   serviceName: MyService
 
-  extraObjects:
-    - apiVersion: external-secrets.io/v1
-      kind: ExternalSecret
-      metadata:
-        name: '{{ include "common.names.fullname" . }}'
+  externalSecrets:
+    appCredentials:
+      dataFrom:
+        - extract:
+            key: '{{ .Release.Namespace }}-credentials'
+      data:
+        - secretKey: api-token
+          remoteRef:
+            key: library-charts/test/app
+            property: apiToken
+      refreshPolicy: Periodic
+      refreshInterval: 30m
 
+  extraObjects:
     - apiVersion: external-secrets.io/v1
       kind: ConfigMap
       metadata:
