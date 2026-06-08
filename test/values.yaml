@@ -5,7 +5,7 @@ test:
     appCredentials:
       dataFrom:
         - extract:
-            key: '{{ .Release.Namespace }}-credentials'
+            key: '{{ include "common.secretNamespace" . }}-credentials'
       data:
         - secretKey: api-token
           remoteRef:

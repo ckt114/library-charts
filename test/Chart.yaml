@@ -4,5 +4,5 @@ version: 0.1.0
 dependencies:
 - name: generic
   alias: test
-  version: 4.5.8
+  version: 4.5.9
   repository: file://../charts/generic
