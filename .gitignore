@@ -9,6 +9,7 @@
 # Helm resources
 charts/*/Chart.lock
 charts/*/charts
+test/Chart.lock
 helper-charts/*/Chart.lock
 helper-charts/*/charts
 
