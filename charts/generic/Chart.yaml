@@ -1,8 +1,8 @@
 apiVersion: v2
 name: generic
 description: A generic chart leveraging common library chart for use with any application.
-version: 4.5.9
+version: 4.5.10
 dependencies:
-- name: common
-  version: 4.5.9
-  repository: file://../stable/common
+  - name: common
+    version: 4.5.10
+    repository: file://../stable/common
